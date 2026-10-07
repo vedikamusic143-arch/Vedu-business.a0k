@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Left Wing of V (Royal/Cobalt Gradient) -->
+    <path
+        android:pathData="M27,24 L48,24 L54,78 L46,78 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="27"
+                android:startY="24"
+                android:endX="54"
+                android:endY="78"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#38BDF8" />
+                <item android:offset="0.4" android:color="#2563EB" />
+                <item android:offset="1.0" android:color="#1D4ED8" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Bottom Curved Fold Apex -->
+    <path
+        android:pathData="M42,63 C46,74 51,84 54,87 C57,84 62,74 66,63 L57,76 C55.5,78 52.5,78 51,76 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="42"
+                android:startY="63"
+                android:endX="66"
+                android:endY="87"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#1E40AF" />
+                <item android:offset="0.5" android:color="#3B82F6" />
+                <item android:offset="1.0" android:color="#60A5FA" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Right Wing of V (Cyan/Aqua Gradient) -->
+    <path
+        android:pathData="M81,24 L60,24 L46,67 C50,75 53.5,81 55,83 L64,60 L81,24 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="81"
+                android:startY="24"
+                android:endX="46"
+                android:endY="83"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#22D3EE" />
+                <item android:offset="0.3" android:color="#00F0FF" />
+                <item android:offset="0.7" android:color="#0284C7" />
+                <item android:offset="1.0" android:color="#1E3A8A" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Top Highlight Glass Accent -->
+    <path
+        android:pathData="M81,24 L65,24 L57,43 C64,33 73,27 81,24 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="65"
+                android:startY="24"
+                android:endX="81"
+                android:endY="43"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#A5F3FC" />
+                <item android:offset="1.0" android:color="#06B6D4" />
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

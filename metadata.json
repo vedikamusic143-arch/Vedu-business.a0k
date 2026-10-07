@@ -1,0 +1,6 @@
+{
+  "name": "VEDU",
+  "description": "VEDU — AI Business Operating & Trust Platform. Intelligence That Moves Business.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

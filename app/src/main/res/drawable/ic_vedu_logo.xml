@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Dark obsidian background glow circle -->
+    <path
+        android:pathData="M100,100m-90,0a90,90 0 1,0 180,0a90,90 0 1,0 -180,0"
+        android:fillColor="#060B12" />
+
+    <!-- Left Wing of the 'V' Ribbon (Royal/Cobalt Blue Gradient) -->
+    <path
+        android:pathData="M52,42 L88,42 L100,132 L86,132 L52,42 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="52"
+                android:startY="42"
+                android:endX="100"
+                android:endY="132"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#38BDF8" />
+                <item android:offset="0.4" android:color="#2563EB" />
+                <item android:offset="1.0" android:color="#1D4ED8" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Bottom Curved Fold Apex -->
+    <path
+        android:pathData="M78,105 C85,125 94,142 100,148 C106,142 115,125 122,105 L106,128 C103,132 97,132 94,128 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="78"
+                android:startY="105"
+                android:endX="122"
+                android:endY="148"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#1E40AF" />
+                <item android:offset="0.5" android:color="#3B82F6" />
+                <item android:offset="1.0" android:color="#60A5FA" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Right Wing of the 'V' Ribbon (Radiant Aqua/Cyan Gradient with Overlap) -->
+    <path
+        android:pathData="M148,42 L112,42 L88,114 C94,128 100,138 102,142 L118,102 L148,42 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="148"
+                android:startY="42"
+                android:endX="88"
+                android:endY="142"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#22D3EE" />
+                <item android:offset="0.3" android:color="#00F0FF" />
+                <item android:offset="0.7" android:color="#0284C7" />
+                <item android:offset="1.0" android:color="#1E3A8A" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Top Gloss Highlight on Right Wing -->
+    <path
+        android:pathData="M148,42 L120,42 L106,75 C118,58 134,48 148,42 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="120"
+                android:startY="42"
+                android:endX="148"
+                android:endY="75"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#67E8F9" />
+                <item android:offset="1.0" android:color="#06B6D4" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Inner Shadow for 3D Depth between Left and Right wings -->
+    <path
+        android:pathData="M98,85 L112,118 L104,136 L94,105 Z"
+        android:fillColor="#151E3A8A" />
+</vector>

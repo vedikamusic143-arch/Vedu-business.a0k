@@ -1,0 +1,44 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    // User profile and private consumer data
+    match /users/{userId} {
+      allow read, write: if isOwner(userId);
+
+      match /vault_items/{itemId} {
+        allow read, write: if isOwner(userId);
+      }
+
+      match /consents/{consentId} {
+        allow read, write: if isOwner(userId);
+      }
+    }
+
+    // Organization business data
+    match /organizations/{orgId} {
+      allow read, write: if isAuthenticated();
+
+      match /audit_logs/{logId} {
+        allow read, create: if isAuthenticated();
+        allow update, delete: if false; // Tamper-proof immutable audit records
+      }
+
+      match /approval_requests/{requestId} {
+        allow read, write: if isAuthenticated();
+      }
+
+      match /simulations/{simId} {
+        allow read, write: if isAuthenticated();
+      }
+    }
+  }
+}
